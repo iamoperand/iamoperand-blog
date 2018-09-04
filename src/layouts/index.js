@@ -5,6 +5,7 @@ import { graphql } from 'graphql';
 
 import Header from '../components/header';
 import './index.css';
+import '../styles/layout-override.css';
 
 
 const Layout = ({ children, data }) => (
