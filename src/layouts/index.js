@@ -7,8 +7,8 @@ import Media from 'react-media';
 import './index.css';
 import '../styles/layout-override.css';
 
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
+import Header from '../components/header';
+import Sidebar from '../components/sidebar';
 
 
 const Layout = ({ children, data }) => (
