@@ -7,8 +7,8 @@ import Media from 'react-media';
 import './index.css';
 import '../styles/layout-override.css';
 
-import Header from '../components/header';
-import Sidebar from '../components/sidebar';
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 
 
 const Layout = ({ children, data }) => (
@@ -16,8 +16,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Official blog of @iamoperand' },
-        { name: 'keywords', content: 'iamoperand, Nikhil Arora' },
+        { name: 'description', content: data.site.siteMetadata.description },
+        { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
@@ -66,10 +66,6 @@ const Layout = ({ children, data }) => (
                     {children()}
                   </div>
                   <div style={{ flex: 1 }}>
-                    <Sidebar
-                      title="WebStack"
-                      description="Articles on React and Node.js. All articles are written by Me."
-                    />
                     <Sidebar
                       title="About author"
                       description="I am a Full-stack Web Developer specializing in React and Node.js based in India."

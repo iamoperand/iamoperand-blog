@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'iamoperand-blog',
+    title: '@iamoperand',
+    description: 'Official blog of @iamoperand',
+    keywords: '@iamoperand, Nikhil Arora',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

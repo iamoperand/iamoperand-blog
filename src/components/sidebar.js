@@ -15,9 +15,11 @@ const Sidebar = ({ title, description }) => (
   </div>
 );
 
+
 Sidebar.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
+
 
 export default Sidebar;

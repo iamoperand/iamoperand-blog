@@ -33,8 +33,10 @@ const Header = ({ siteTitle }) => (
   </div>
 );
 
+
 Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,
 };
+
 
 export default Header;
